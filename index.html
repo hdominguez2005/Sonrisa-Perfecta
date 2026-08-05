@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonrisa Perfecta | Clínica Dental</title>
+  <meta name="description" content="Clínica dental Sonrisa Perfecta. Odontología general, estética y ortodoncia. Agenda tu cita en línea de forma rápida y sencilla.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <svg class="logo__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 21c-1.6 0-2.2-1.4-2.6-3.1-.4-1.6-.8-2.4-1.6-2.4s-1.4.9-1.9 2c-.6 1.3-1.6 1.4-2.2.6C2.6 16.7 2 14.4 2 12c0-3.9 2.4-6.5 5.2-6.5 1.4 0 2.4.5 3.2.9.7.4 1.1.6 1.6.6s.9-.2 1.6-.6c.8-.4 1.8-.9 3.2-.9C19.6 5.5 22 8.1 22 12c0 2.4-.6 4.7-1.7 6.1-.6.8-1.6.7-2.2-.6-.5-1.1-1.1-2-1.9-2s-1.2.8-1.6 2.4C14.2 19.6 13.6 21 12 21Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo__text">Sonrisa <em>Perfecta</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#cita" class="btn btn--sm nav__cta">Agendar cita</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Odontología integral</p>
+          <h1 class="hero__title">Tu sonrisa,<br><em>en las mejores manos.</em></h1>
+          <p class="hero__text">
+            Atención dental cercana y sin prisas. Diagnóstico claro, tratamientos
+            precisos y un equipo que se toma el tiempo de explicarte cada paso.
+          </p>
+          <div class="hero__actions">
+            <a href="#cita" class="btn">Agendar mi cita</a>
+            <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+          </div>
+
+          <ul class="hero__stats">
+            <li><strong>+15</strong><span>Años de experiencia</span></li>
+            <li><strong>+4,800</strong><span>Pacientes atendidos</span></li>
+            <li><strong>4.9</strong><span>Valoración promedio</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c-1.6 0-2.2-1.4-2.6-3.1-.4-1.6-.8-2.4-1.6-2.4s-1.4.9-1.9 2c-.6 1.3-1.6 1.4-2.2.6C2.6 16.7 2 14.4 2 12c0-3.9 2.4-6.5 5.2-6.5 1.4 0 2.4.5 3.2.9.7.4 1.1.6 1.6.6s.9-.2 1.6-.6c.8-.4 1.8-.9 3.2-.9C19.6 5.5 22 8.1 22 12c0 2.4-.6 4.7-1.7 6.1-.6.8-1.6.7-2.2-.6-.5-1.1-1.1-2-1.9-2s-1.2.8-1.6 2.4C14.2 19.6 13.6 21 12 21Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="hero__card-title">Primera consulta</p>
+            <p class="hero__card-price">Sin costo</p>
+            <p class="hero__card-note">Incluye revisión y plan de tratamiento personalizado.</p>
+          </div>
+          <div class="hero__blob"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Servicios</p>
+          <h2>Todo lo que tu boca necesita,<br>en un solo lugar.</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c-1.6 0-2.2-1.4-2.6-3.1-.4-1.6-.8-2.4-1.6-2.4s-1.4.9-1.9 2c-.6 1.3-1.6 1.4-2.2.6C2.6 16.7 2 14.4 2 12c0-3.9 2.4-6.5 5.2-6.5 1.4 0 2.4.5 3.2.9.7.4 1.1.6 1.6.6s.9-.2 1.6-.6c.8-.4 1.8-.9 3.2-.9C19.6 5.5 22 8.1 22 12c0 2.4-.6 4.7-1.7 6.1-.6.8-1.6.7-2.2-.6-.5-1.1-1.1-2-1.9-2s-1.2.8-1.6 2.4C14.2 19.6 13.6 21 12 21Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Odontología general</h3>
+            <p>Limpiezas, resinas, extracciones y revisiones periódicas para mantener tu salud bucal en orden.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="m12 3 1.9 3.9 4.3.6-3.1 3 .7 4.3-3.8-2-3.8 2 .7-4.3-3.1-3 4.3-.6L12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6 20h12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Estética dental</h3>
+            <p>Blanqueamiento, carillas y diseño de sonrisa con resultados naturales y armónicos.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="9" width="18" height="6" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M8 9v6M12 9v6M16 9v6" stroke="currentColor" stroke-width="1.3"/></svg>
+            </div>
+            <h3>Ortodoncia</h3>
+            <p>Brackets tradicionales, estéticos y alineadores invisibles adaptados a tu ritmo de vida.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v8M12 21v-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M8 6.5C8 4.6 9.8 3 12 3s4 1.6 4 3.5S14 11 12 11 8 8.4 8 6.5Z" stroke="currentColor" stroke-width="1.3"/><path d="M9 14h6l-1 7h-4l-1-7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Implantes dentales</h3>
+            <p>Recupera piezas perdidas con implantes de titanio y coronas que se ven y sienten reales.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.3"/><circle cx="16.5" cy="10" r="2.2" stroke="currentColor" stroke-width="1.3"/><path d="M3 19c0-2.8 2.7-4.5 6-4.5s6 1.7 6 4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M16.5 14.5c2.6 0 4.5 1.4 4.5 3.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Odontopediatría</h3>
+            <p>Consultas pensadas para los más pequeños, en un ambiente tranquilo y libre de miedo.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.4-7.5-9.7A4.4 4.4 0 0 1 12 8.4a4.4 4.4 0 0 1 7.5 2.9C19.5 16.6 12 21 12 21Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Urgencias dentales</h3>
+            <p>Dolor, fracturas o inflamación: atendemos el mismo día para que no esperes con molestias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section section--alt" id="nosotros">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow">Nosotros</p>
+          <h2>Una clínica donde<br>sí te escuchan.</h2>
+          <p>
+            En Sonrisa Perfecta trabajamos con un principio simple: nadie debería salir
+            de una consulta con dudas. Te explicamos el diagnóstico, las opciones y el
+            costo antes de empezar, sin letras chiquitas.
+          </p>
+          <ul class="checklist">
+            <li>Presupuesto cerrado y por escrito antes de cualquier tratamiento.</li>
+            <li>Equipo de radiografía digital con menor exposición.</li>
+            <li>Protocolos de esterilización certificados en cada consulta.</li>
+            <li>Citas puntuales: respetamos tu horario.</li>
+          </ul>
+          <a href="#cita" class="btn">Reservar una valoración</a>
+        </div>
+
+        <div class="about__panel">
+          <div class="stat">
+            <strong>08:00 – 20:00</strong>
+            <span>Lunes a viernes</span>
+          </div>
+          <div class="stat">
+            <strong>09:00 – 14:00</strong>
+            <span>Sábados</span>
+          </div>
+          <div class="stat">
+            <strong>Mismo día</strong>
+            <span>Atención de urgencias</span>
+          </div>
+          <div class="stat">
+            <strong>Meses sin intereses</strong>
+            <span>Con tarjetas participantes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Testimonios</p>
+          <h2>Lo que dicen nuestros pacientes</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <figure class="quote">
+            <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>Llegué con miedo al dentista y salí agendando mi siguiente limpieza. Explican todo con calma y sin presionarte a nada.</blockquote>
+            <figcaption><strong>Mariana L.</strong><span>Blanqueamiento</span></figcaption>
+          </figure>
+
+          <figure class="quote">
+            <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>Me pusieron dos implantes y el resultado es impecable. El presupuesto fue exactamente el que me dieron desde el inicio.</blockquote>
+            <figcaption><strong>Jorge R.</strong><span>Implantes</span></figcaption>
+          </figure>
+
+          <figure class="quote">
+            <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>Llevo a mis dos hijos y es la primera clínica donde no lloran. Súper pacientes con los niños.</blockquote>
+            <figcaption><strong>Ana Sofía M.</strong><span>Odontopediatría</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AGENDAR CITA ============ -->
+    <section class="section section--alt" id="cita">
+      <div class="container booking">
+        <div class="booking__intro">
+          <p class="eyebrow">Agenda tu cita</p>
+          <h2>Reserva en menos<br>de un minuto.</h2>
+          <p>
+            Completa el formulario y te confirmamos por WhatsApp o correo en menos de
+            2 horas hábiles. Si prefieres, también puedes llamarnos directamente.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 5.5c0-.8.7-1.5 1.5-1.5h2c.6 0 1.2.4 1.4 1l.9 2.6c.2.6 0 1.2-.5 1.6l-1.1.8a12 12 0 0 0 5.3 5.3l.8-1.1c.4-.5 1-.7 1.6-.5l2.6.9c.6.2 1 .8 1 1.4v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4.5 5.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+              <a href="tel:+525512345678">+52 55 1234 5678</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="m3.5 7 8.5 6 8.5-6" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+              <a href="mailto:hola@sonrisaperfecta.mx">hola@sonrisaperfecta.mx</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-6.5-5.1-6.5-10a6.5 6.5 0 1 1 13 0c0 4.9-6.5 10-6.5 10Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.3" stroke="currentColor" stroke-width="1.3"/></svg>
+              <span>Av. Reforma 1234, Col. Centro</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="booking__form-wrap">
+          <form class="form" id="bookingForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. María González" autocomplete="name" required>
+                <p class="field__error" data-error-for="nombre"></p>
+              </div>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" autocomplete="tel" inputmode="numeric" required>
+                <p class="field__error" data-error-for="telefono"></p>
+              </div>
+              <div class="field">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+                <p class="field__error" data-error-for="email"></p>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="servicio">Motivo de la consulta</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="" disabled selected>Selecciona un servicio</option>
+                  <option>Consulta / valoración general</option>
+                  <option>Limpieza dental</option>
+                  <option>Estética dental / blanqueamiento</option>
+                  <option>Ortodoncia</option>
+                  <option>Implantes dentales</option>
+                  <option>Odontopediatría</option>
+                  <option>Urgencia dental</option>
+                </select>
+                <p class="field__error" data-error-for="servicio"></p>
+              </div>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label for="fecha">Fecha preferida</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <p class="field__error" data-error-for="fecha"></p>
+              </div>
+              <div class="field">
+                <label for="hora">Horario preferido</label>
+                <select id="hora" name="hora" required>
+                  <option value="" disabled selected>Selecciona una hora</option>
+                  <option>08:00 – 10:00</option>
+                  <option>10:00 – 12:00</option>
+                  <option>12:00 – 14:00</option>
+                  <option>16:00 – 18:00</option>
+                  <option>18:00 – 20:00</option>
+                </select>
+                <p class="field__error" data-error-for="hora"></p>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="mensaje">Comentarios <span class="optional">(opcional)</span></label>
+                <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos brevemente qué te trae a consulta"></textarea>
+              </div>
+            </div>
+
+            <label class="checkbox">
+              <input type="checkbox" id="aviso" name="aviso" required>
+              <span>Acepto el aviso de privacidad y el contacto para confirmar mi cita.</span>
+            </label>
+            <p class="field__error" data-error-for="aviso"></p>
+
+            <button type="submit" class="btn btn--block" id="submitBtn">Solicitar cita</button>
+            <p class="form__note">No se realiza ningún cargo al agendar.</p>
+
+            <div class="form__success" id="formSuccess" role="status" hidden>
+              <div class="form__success-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>¡Solicitud enviada!</h3>
+              <p id="successDetail">Te contactaremos para confirmar tu cita.</p>
+              <button type="button" class="btn btn--ghost btn--sm" id="resetForm">Agendar otra cita</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--light">
+          <svg class="logo__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 21c-1.6 0-2.2-1.4-2.6-3.1-.4-1.6-.8-2.4-1.6-2.4s-1.4.9-1.9 2c-.6 1.3-1.6 1.4-2.2.6C2.6 16.7 2 14.4 2 12c0-3.9 2.4-6.5 5.2-6.5 1.4 0 2.4.5 3.2.9.7.4 1.1.6 1.6.6s.9-.2 1.6-.6c.8-.4 1.8-.9 3.2-.9C19.6 5.5 22 8.1 22 12c0 2.4-.6 4.7-1.7 6.1-.6.8-1.6.7-2.2-.6-.5-1.1-1.1-2-1.9-2s-1.2.8-1.6 2.4C14.2 19.6 13.6 21 12 21Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo__text">Sonrisa <em>Perfecta</em></span>
+        </a>
+        <p>Odontología integral con trato humano.<br>Av. Reforma 1234, Col. Centro.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Clínica</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#cita">Agendar cita</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="tel:+525512345678">+52 55 1234 5678</a>
+        <a href="mailto:hola@sonrisaperfecta.mx">hola@sonrisaperfecta.mx</a>
+        <span>Lun – Vie: 08:00 a 20:00</span>
+        <span>Sábado: 09:00 a 14:00</span>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Sonrisa Perfecta. Todos los derechos reservados.</p>
+      <p>Aviso de privacidad · Términos y condiciones</p>
+    </div>
+  </footer>
+
+  <a href="#cita" class="fab" aria-label="Agendar cita">Agendar cita</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

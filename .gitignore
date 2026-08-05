@@ -1,0 +1,14 @@
+# Vercel
+.vercel
+
+# Dependencias (por si más adelante añades un build)
+node_modules/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
