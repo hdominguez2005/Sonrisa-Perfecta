@@ -135,6 +135,7 @@ em { font-style: italic; color: var(--teal-700); }
   font-family: 'Fraunces', serif;
   font-size: 1.22rem;
   letter-spacing: -.01em;
+  white-space: nowrap;
 }
 .logo--light { color: #fff; }
 .logo--light .logo__mark { color: var(--teal-100); }
@@ -565,7 +566,9 @@ em { font-style: italic; color: var(--teal-700); }
   .footer__brand { grid-column: 1 / -1; }
 }
 
-@media (max-width: 720px) {
+/* El menú pasa a hamburguesa antes que el resto del layout: con el nombre
+   completo, el logo y los enlaces ya no caben en una fila por debajo de esto. */
+@media (max-width: 860px) {
   .nav {
     position: absolute;
     top: var(--header-h);
@@ -586,7 +589,9 @@ em { font-style: italic; color: var(--teal-700); }
   .nav a { padding: 11px 0; border-bottom: 1px solid var(--line); }
   .nav__cta { margin-top: 12px; border-bottom: none; justify-content: center; }
   .nav-toggle { display: flex; }
+}
 
+@media (max-width: 720px) {
   .grid--3 { grid-template-columns: 1fr; }
   .about__panel { grid-template-columns: 1fr; }
   .hero__stats { gap: 26px; }

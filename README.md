@@ -1,4 +1,4 @@
-# Sonrisa Perfecta — Clínica Dental
+# Una Sonrisa Perfecta — Clínica Dental
 
 Landing page estática de una sola página con formulario para agendar citas.
 Sin dependencias, sin paso de build: HTML, CSS y JavaScript puros.
