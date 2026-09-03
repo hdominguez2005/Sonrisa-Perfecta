@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Sonrisa Perfecta | Clínica Dental</title>
+  <meta name="description" content="Clínica dental en la Col. Centro. Diagnóstico con radiografía, explicación clara y presupuesto por escrito antes de empezar. Agenda tu valoración.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62.5..125,400..700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="head" id="head">
+  <div class="shell head__inner">
+    <a class="brand" href="#inicio">
+      <svg class="brand__mark" viewBox="0 0 40 56" aria-hidden="true">
+        <path d="M13 6.5A4 4 0 0 1 17 3h6a4 4 0 0 1 4 3.5V23q0 3.5-2.5 5.5L21.4 51a1.4 1.4 0 0 1-2.8 0L15.5 28.5Q13 26.5 13 23Z"/>
+      </svg>
+      <span class="brand__name">Una Sonrisa Perfecta</span>
+    </a>
+
+    <nav class="head__nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#consulta">La primera consulta</a>
+      <a href="#agendar" class="btn btn--sm">Agendar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ───────────────── HERO ───────────────── -->
+  <section class="hero band" id="inicio">
+    <div class="shell hero__grid">
+
+      <div class="hero__lede">
+        <p class="tag">Odontología general, estética y ortodoncia</p>
+        <h1 class="hero__title">Te decimos qué tienes, cuánto cuesta y por qué.</h1>
+        <p class="lede">
+          Cada diagnóstico viene con radiografía, una explicación en palabras normales
+          y un presupuesto cerrado por escrito. Todo eso antes de tocar nada.
+        </p>
+        <div class="hero__actions">
+          <a href="#agendar" class="btn">Agendar valoración</a>
+          <a href="#consulta" class="btn btn--plain">Ver cómo es la primera cita</a>
+        </div>
+      </div>
+
+      <!-- Signature: odontograma interactivo -->
+      <div class="chart">
+        <p class="chart__caption">
+          Tu boca tiene 32 piezas y cada una lleva número.
+          Toca cualquiera para ver cuál es y qué tratamientos le corresponden.
+        </p>
+
+        <div class="chart__arch" id="arch" role="group" aria-label="Odontograma: selecciona una pieza dental">
+          <!-- Generado por script.js -->
+        </div>
+
+        <div class="readout" id="readout" aria-live="polite">
+          <p class="readout__empty" id="readoutEmpty">Ninguna pieza seleccionada.</p>
+
+          <div class="readout__detail" id="readoutDetail" hidden>
+            <p class="readout__fdi" id="readoutFdi">26</p>
+            <div class="readout__body">
+              <h2 class="readout__name" id="readoutName">Primer molar superior izquierdo</h2>
+              <p class="readout__label">Tratamientos frecuentes en esta pieza</p>
+              <ul class="readout__tx" id="readoutTx"></ul>
+            </div>
+            <button type="button" class="btn btn--sm" id="bookTooth">Agendar para esta pieza</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────── SERVICIOS ───────────────── -->
+  <section class="band band--edge" id="servicios">
+    <div class="shell">
+      <h2 class="h2">Lo que hacemos</h2>
+
+      <dl class="services">
+        <div class="service">
+          <dt class="service__name">Revisión y limpieza</dt>
+          <dd class="service__desc">Detartraje, pulido y control de caries. Es la cita que evita las caras.</dd>
+          <dd class="service__zone">Todas las piezas</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Resinas y coronas</dt>
+          <dd class="service__desc">Reconstrucción de piezas dañadas por caries o fractura, del color de tu diente.</dd>
+          <dd class="service__zone">Premolares y molares</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Endodoncia</dt>
+          <dd class="service__desc">Tratamiento de conductos con anestesia. Salva la pieza en lugar de extraerla.</dd>
+          <dd class="service__zone">Molares y premolares</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Estética dental</dt>
+          <dd class="service__desc">Blanqueamiento, carillas y diseño de sonrisa. Resultados que se ven naturales.</dd>
+          <dd class="service__zone">Incisivos y caninos</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Ortodoncia</dt>
+          <dd class="service__desc">Brackets tradicionales, estéticos y alineadores transparentes.</dd>
+          <dd class="service__zone">Arcada completa</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Implantes</dt>
+          <dd class="service__desc">Raíz de titanio y corona a medida para reponer una pieza perdida.</dd>
+          <dd class="service__zone">Cualquier ausencia</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Cirugía y extracciones</dt>
+          <dd class="service__desc">Incluye muelas del juicio retenidas, con estudio radiográfico previo.</dd>
+          <dd class="service__zone">Terceros molares</dd>
+        </div>
+
+        <div class="service">
+          <dt class="service__name">Odontopediatría</dt>
+          <dd class="service__desc">Consultas para niños, con el tiempo que haga falta para que pierdan el miedo.</dd>
+          <dd class="service__zone">Dentición temporal</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ───────────────── PRIMERA CONSULTA ───────────────── -->
+  <section class="band" id="consulta">
+    <div class="shell steps__grid">
+      <div class="steps__intro">
+        <h2 class="h2">La primera consulta, paso a paso</h2>
+        <p class="lede">
+          Sabes exactamente qué va a pasar antes de sentarte. La valoración no tiene costo
+          y no incluye ningún tratamiento: solo salimos de dudas.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n">1</span>
+          <div>
+            <h3 class="step__title">Revisión y radiografía digital</h3>
+            <p>Exploramos las 32 piezas y tomamos las radiografías necesarias. Equipo digital, menor exposición.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">2</span>
+          <div>
+            <h3 class="step__title">El diagnóstico, en palabras normales</h3>
+            <p>Te enseñamos las imágenes y te explicamos qué encontramos, pieza por pieza. Preguntas las que quieras.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">3</span>
+          <div>
+            <h3 class="step__title">Presupuesto cerrado, por escrito</h3>
+            <p>Con las opciones de tratamiento, lo que cuesta cada una y en qué orden conviene hacerlas. Sin letra chiquita.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">4</span>
+          <div>
+            <h3 class="step__title">Decides tú</h3>
+            <p>Te llevas el presupuesto y lo piensas. Si prefieres atenderte en otro lado, el diagnóstico es tuyo igual.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────────────── AGENDAR ───────────────── -->
+  <section class="band band--edge" id="agendar">
+    <div class="shell book__grid">
+
+      <div class="book__intro">
+        <h2 class="h2">Agenda tu cita</h2>
+        <p class="lede">
+          Déjanos tus datos y te confirmamos por WhatsApp o correo en menos de
+          2 horas hábiles. Si prefieres hablar, marca directo.
+        </p>
+
+        <ul class="meta">
+          <li><span class="meta__k">Teléfono</span><a class="meta__v" href="tel:+525512345678">+52 55 1234 5678</a></li>
+          <li><span class="meta__k">Correo</span><a class="meta__v" href="mailto:hola@sonrisaperfecta.mx">hola@sonrisaperfecta.mx</a></li>
+          <li><span class="meta__k">Dirección</span><span class="meta__v">Av. Reforma 1234, Col. Centro</span></li>
+          <li><span class="meta__k">Lun a Vie</span><span class="meta__v">08:00 – 20:00</span></li>
+          <li><span class="meta__k">Sábado</span><span class="meta__v">09:00 – 14:00</span></li>
+          <li><span class="meta__k">Urgencias</span><span class="meta__v">Mismo día</span></li>
+        </ul>
+      </div>
+
+      <div class="book__form">
+        <form class="form" id="bookingForm" novalidate>
+
+          <div class="field">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="María González" required>
+            <p class="err" data-error-for="nombre"></p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="numeric" placeholder="10 dígitos" required>
+              <p class="err" data-error-for="telefono"></p>
+            </div>
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required>
+              <p class="err" data-error-for="email"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="servicio">Motivo de la consulta</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" disabled selected>Selecciona un motivo</option>
+              <option>Valoración general</option>
+              <option>Revisión y limpieza</option>
+              <option>Resinas y coronas</option>
+              <option>Endodoncia</option>
+              <option>Estética dental</option>
+              <option>Ortodoncia</option>
+              <option>Implantes</option>
+              <option>Cirugía y extracciones</option>
+              <option>Odontopediatría</option>
+              <option>Urgencia dental</option>
+            </select>
+            <p class="err" data-error-for="servicio"></p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="fecha">Fecha preferida</label>
+              <input type="date" id="fecha" name="fecha" required>
+              <p class="err" data-error-for="fecha"></p>
+            </div>
+            <div class="field">
+              <label for="hora">Horario preferido</label>
+              <select id="hora" name="hora" required>
+                <option value="" disabled selected>Selecciona una hora</option>
+                <option>08:00 – 10:00</option>
+                <option>10:00 – 12:00</option>
+                <option>12:00 – 14:00</option>
+                <option>16:00 – 18:00</option>
+                <option>18:00 – 20:00</option>
+              </select>
+              <p class="err" data-error-for="hora"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Qué te trae a consulta <span class="opt">(opcional)</span></label>
+            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Molestia, pieza que te duele, o lo que quieras que sepamos antes"></textarea>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" id="aviso" name="aviso" required>
+            <span>Acepto el aviso de privacidad y que me contacten para confirmar la cita.</span>
+          </label>
+          <p class="err" data-error-for="aviso"></p>
+
+          <button type="submit" class="btn btn--block" id="submitBtn">Solicitar cita</button>
+          <p class="form__note">Agendar no genera ningún cargo. La valoración es sin costo.</p>
+
+          <div class="done" id="formSuccess" role="status" hidden>
+            <p class="done__mark">✓</p>
+            <h2 class="done__title">Solicitud enviada</h2>
+            <p class="done__detail" id="successDetail"></p>
+            <button type="button" class="btn btn--plain btn--sm" id="resetForm">Agendar otra cita</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot__inner">
+    <p class="foot__brand">Una Sonrisa Perfecta</p>
+    <p class="foot__addr">Av. Reforma 1234, Col. Centro<br>+52 55 1234 5678</p>
+    <p class="foot__legal">© <span id="year">2026</span> · Aviso de privacidad</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
